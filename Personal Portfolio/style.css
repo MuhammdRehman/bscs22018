@@ -1,3 +1,4 @@
+/* General reset and styling */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
     padding: 10px;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,20 @@ nav {
     text-decoration: none;
 }
 
+/* Profile Image Circular and Small */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo .image {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+/* Header section */
 header {
     text-align: center;
     padding: 50px 0;
@@ -42,6 +58,7 @@ header {
     color: white;
 }
 
+/* Sections */
 section {
     margin: 20px 0;
 }
@@ -54,6 +71,7 @@ ul {
     list-style-type: none;
 }
 
+/* Form elements */
 form {
     display: flex;
     flex-direction: column;
@@ -73,6 +91,7 @@ button {
     cursor: pointer;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -81,6 +100,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive styling for mobile */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
