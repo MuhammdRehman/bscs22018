@@ -12,12 +12,11 @@ body {
     padding: 10px;
 }
 
-/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f3a93; /* Deep Blue for the nav background */
+    background-color: #1f3a93; 
     color: #fff;
     padding: 15px;
 }
@@ -39,10 +38,10 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #ffca28; /* Soft Yellow hover effect */
+    color: #ffca28; 
 }
 
-/* Profile Image Circular and Small */
+
 nav .logo {
     display: flex;
     align-items: center;
@@ -55,11 +54,11 @@ nav .logo .image {
     margin-right: 10px; 
 }
 
-/* Header Section */
+
 header {
     text-align: center;
     padding: 50px 0;
-    background-color: #2c3e50; /* Darker Blue-Grey */
+    background-color: #2c3e50; 
     color: white;
 }
 
@@ -75,23 +74,23 @@ header p {
 
 header video {
     max-width: 100%;
-    border: 3px solid #ffca28; /* Soft Yellow border around video */
+    border: 3px solid #ffca28; 
     border-radius: 10px;
     margin-top: 20px;
 }
 
-/* Sections */
+
 section {
     margin: 40px 0;
 }
 
 h2 {
-    color: #1f3a93; /* Deep Blue for section headings */
+    color: #1f3a93; 
     font-size: 2em;
     margin-bottom: 15px;
 }
 
-/* Skills Section */
+
 .skills-list {
     display: flex;
     justify-content: space-between;
@@ -108,18 +107,19 @@ h2 {
 ul li {
     background-color: #fff;
     padding: 10px;
-    border-left: 5px solid #1f3a93; /* Deep Blue accent for list items */
+    border-left: 5px solid #ffca28;
     border-radius: 4px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
+
+
 #contact ul li {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 10px;
-    border-left: 5px solid #ffca28; /* Soft Yellow accent for contacts */
+    border-left: 5px solid #ffca28; 
     border-radius: 4px;
 }
 
@@ -131,44 +131,49 @@ ul li {
 }
 
 #contact a:hover {
-    color: #ffca28; /* Hover effect */
+    color: #ffca28; 
 }
 
-/* Buttons */
-button {
-    padding: 10px;
-    background-color: #1f3a93;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-button:hover {
-    background-color: #ffca28;
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1f3a93; /* Deep Blue */
+    background-color: #1f3a93; 
     color: white;
     margin-top: 40px;
 }
 
-/* Responsive styling for mobile */
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
-    .skills-list {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
+    .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1f3a93;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
     }
 
-    header h1 {
-        font-size: 2em;
+    .nav-links li {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
     }
 }
