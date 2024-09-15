@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Profile showcasing skills, projects, awards, and more.">
+    <meta name="keywords" content="professional, profile, skills, projects, certifications, hackathons">
+    <meta name="author" content="Your Name">
+    <title>Professional Profile - Muhammad Rehman</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Muhammad Rehman</div>
+        <ul class="nav-links">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ur">Urdu</option>
+                    <option value="fr">French</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Professional Profile</h1>
+        <p>Displaying my skills, projects, awards, and more.</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div>
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>Programming Languages: C, C++, C#, Python, JavaScript</li>
+                    <li>Web Development: HTML, CSS, JS, ASP.NET CORE, ASP.NET CORE MVC, ASP.NET CORE WebAPI, Razor Pages</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Linux, Bash Scripting, Windows</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Code Refactoring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Web Development Portfolio  <em>Date: Jan 2023</em></li>
+            <li><strong>Project 2:</strong>  <em>Date: Mar 2023</em></li>
+            <li><strong>Project 3:</strong> Mobile App Development - <em>Date: Jun 2023</em></li>
+        </ul>
+    </section>
+
+
+    <!-- Side Projects & Hackathons -->
+    <section id="side-projects">
+        <h2>Side Projects & Hackathons</h2>
+        <ul>
+            <li><strong>Hackathon:</strong> Competitive Programming competition held in PUCIT <em>Date: March 2024</em></li>
+            <li><strong>Project:</strong> Charity Management System <em>Date: July 2024</em></li>
+        </ul>
+    </section>
+
+    <!-- Degrees Section -->
+    <section id="degrees">
+        <h2>Degrees & Short Courses</h2>
+        <ul>
+            <li><strong>Bachelor's Degree:</strong> Computer Science - <em>Information Technology University,Lahore, Punjab, 2022-Present</em></li>
+            <li><strong>Short Course:</strong>ASP.NET CORE - <em>Date: JUNE 2024</em></li>
+        </ul>
+    </section>
+
+    <!-- Social Media Feed (Placeholder) -->
+    <section id="social-media">
+        <h2>Social Media Feed</h2>
+        <ul>
+            <li>Instagram <a "https://github.com/MuhammdRehman?tab=overview&from=2024-09-01&to=2024-09-10"></a></li>
+        </ul>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Muhammad Rehman. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for mobile nav and language selection -->
+    <script>
+        document.getElementById('language-select').addEventListener('change', function() {
+            var lang = this.value;
+            alert("Language changed to: " + lang); // You can implement actual translations here
+        });
+    </script>
+
+</body>
+</html>
