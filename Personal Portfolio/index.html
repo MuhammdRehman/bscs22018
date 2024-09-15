@@ -6,7 +6,7 @@
     <meta name="description" content="Professional Profile showcasing skills, projects, awards, and more.">
     <meta name="keywords" content="professional, profile, skills, projects, certifications, hackathons">
     <meta name="author" content="Muhammad Rehman">
-    <title>Professional Profile - Muhammad Rehman</title>
+    <title>Profile - Muhammad Rehman</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,14 +20,6 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#awards">Awards</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li>
-                <select id="language-select">
-                    <option value="en">English</option>
-                    <option value="ar">Arabic</option>
-                    <option value="ur">Urdu</option>
-                    <option value="fr">French</option>
-                </select>
-            </li>
         </ul>
     </nav>
 
@@ -51,7 +43,7 @@
                     <li>Programming Languages: C, C++, C#, Python, JavaScript</li>
                     <li>Web Development: HTML, CSS, JS, ASP.NET CORE, ASP.NET CORE MVC, ASP.NET CORE WebAPI, Razor Pages</li>
                     <li>Version Control: Git, GitHub</li>
-                    <li>Linux, Bash Scripting, Windows</li>
+                    <li>Linux, Bash, Windows</li>
                 </ul>
             </div>
             <div>
@@ -60,7 +52,8 @@
                     <li>Teamwork</li>
                     <li>Problem Solving</li>
                     <li>Time Management</li>
-                    <li>Code Refactoring</li>
+                    <li>Smart Solutions</li>
+                    <li>Work Dedication</li>
                 </ul>
             </div>
         </div>
@@ -70,9 +63,11 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Project 1:</strong> Web Development Portfolio  <em>Date: Jan 2023</em></li>
-            <li><strong>Project 2:</strong>  <em>Date: Mar 2023</em></li>
-            <li><strong>Project 3:</strong> Mobile App Development - <em>Date: Jun 2023</em></li>
+            <li><strong>Project 1:</strong> Web Development Portfolio - <em>Date: Jan 2024</em></li>
+            <li><strong>Project 2:</strong> Socket Programming(With Image Processing) - <em>Date: November 2023</em></li>
+            <li><strong>Project 3:</strong> Chess(Using SFML) - <em>Date: May 2023</em></li>
+            <li><strong>Project 4:</strong> Snake Game(Similar to Old Nokia Mobile Game) - <em>Date: Feb 2023</em></li>
+            <li><strong>Project 5:</strong> Shogi(Japanese Chess) - <em>Date: Dec 2022</em></li>
         </ul>
     </section>
 
@@ -107,21 +102,22 @@
     </ul>
 </section>
 
+<!-- Adding the phrase "جزاک اللہ خیراً" at the end of the page -->
+<section id="thanks">
+    <p style="text-align: center; font-size: 18px; margin-top: 30px;">جزاک اللہ خیراً</p>
+</section>
 
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Muhammad Rehman</p>
+</footer>
 
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Muhammad Rehman. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript for mobile nav and language selection -->
-    <script>
-        document.getElementById('language-select').addEventListener('change', function() {
-            var lang = this.value;
-            alert("Language changed to: " + lang); // You can implement actual translations here
-        });
-    </script>
+<script>
+    document.getElementById('language-select').addEventListener('change', function() {
+        var lang = this.value;
+        alert("Language changed to: " + lang); 
+    });
+</script>
 
 </body>
 </html>
