@@ -75,3 +75,15 @@ function populateLanguages() {
     languagesList.innerHTML =  `<ul>${languages.map(language => `<li>${language}</li>`).join('')}</ul>`;
 }
 populateLanguages();
+const contact = [
+    { type: "WhatsApp", link: "https://wa.me/923457036657", text: "Let's chat on WhatsApp" },
+    { type: "Email", link: "mailto:ammuhammadrehman@gmail.com", text: "ammuhammadrehman@gmail.com" },
+    { type: "LinkedIn", link: "https://www.linkedin.com/in/muhammad-rehman-196bb5263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", text: "Connect on LinkedIn" },
+    { type: "Facebook", link: "https://www.facebook.com/profile.php?id=100053799444115&mibextid=ZbWKwL", text: "Follow on Facebook" },
+    { type: "Instagram", link: "https://www.instagram.com/_muhammad_rehman_?igsh=a283MTFpYWQxZmdk", text: "Follow on Instagram" }
+];
+function populateContacts(){
+    const contactList = document.getElementById("contacts-list");
+    contactList.innerHTML = `<ul>${contactList.innerHTML = contact.map(info => `<li><strong>${info.type}:</strong> <a href="${info.link}" target="_blank">${info.text}</a></li>`).join('')}</ul>`;
+}
+populateContacts();
