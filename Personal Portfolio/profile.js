@@ -87,3 +87,14 @@ function populateContacts(){
     contactList.innerHTML = `<ul>${contactList.innerHTML = contact.map(info => `<li><strong>${info.type}:</strong> <a href="${info.link}" target="_blank">${info.text}</a></li>`).join('')}</ul>`;
 }
 populateContacts();
+
+
+
+function profileAndSEO(){
+    document.title = "Profile - Muhammad Rehman"; 
+    document.querySelector('meta[name="description"]').setAttribute("content", "Professional Profile showcasing skills, projects, awards, and more.");
+    document.querySelector('meta[name="keywords"]').setAttribute("content", "professional, profile, skills, projects, certifications, hackathons");
+    document.querySelector('meta[name="author"]').setAttribute("content", "Muhammad Rehman");
+}
+profileAndSEO();
+
