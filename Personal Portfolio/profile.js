@@ -33,3 +33,25 @@ function populateProjects() {
     projectsList.innerHTML=`<ul>${projects.map(project => `<li><strong>${project.name}</strong> - <em>${project.date}</em></li>`).join('')}</ul>`;
 }
 populateProjects();
+const sideProjects = [
+    { name: "Hackathon: Competitive Programming competition", date: "March 2024" },
+    { name: "Project: Charity Management System", date: "July 2024" }
+];
+function populateSideProjects() {
+    const projectsList = document.getElementById('side-projects-list');
+    projectsList.innerHTML=`<ul>${sideProjects.map(sideproject => `<li><strong>${sideproject.name}</strong> - <em>${sideproject.date}</em></li>`).join('')}</ul>`;
+}
+populateSideProjects();
+
+const degrees = [
+    { name: "Bachelor's Degree: Computer Science", institution: "Information Technology University, Lahore", date: "2022-Present" },
+    {name: "Intermediate",institution: "Superior Group of Colleges",date:"2020-2022"},
+    {name: "Matriculation",institution: "Govt. High School",date:"2018-2020"},
+    {name: "Short Course: ASP.NET CORE",institution:"92 Logics", date: "JUNE 2024" }
+];
+
+function populateDegrees() {
+    const projectsList = document.getElementById('degrees-list');
+    projectsList.innerHTML=`<ul>${degrees.map(degree => `<li><strong>${degree.name}</strong> - <em>${degree.institution}   <b>${degree.date}</b></em></li>`).join('')}</ul>`;
+}
+populateDegrees();
