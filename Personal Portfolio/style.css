@@ -170,6 +170,10 @@ footer:hover{
     width: 15px;
     height: 15px;
 }
+.icon:hover{
+    width: 20px;
+    height: 20px;
+}
 .footer-contents{
     display: flex;
     justify-content: center;
@@ -183,6 +187,11 @@ footer:hover{
     margin: 20px 20px;
     justify-content: space-between;
 }
+#footer-links img:hover{
+    width: 35px;
+    height: 35px;
+}
+
 
 
 
