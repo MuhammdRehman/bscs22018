@@ -55,3 +55,23 @@ function populateDegrees() {
     projectsList.innerHTML=`<ul>${degrees.map(degree => `<li><strong>${degree.name}</strong> - <em>${degree.institution}   <b>${degree.date}</b></em></li>`).join('')}</ul>`;
 }
 populateDegrees();
+const awards = [
+    { name: "Prime Minister Youth Laptop Award", date: "April 2024" },
+    { name: "Fully Merit Based Scholarship", date: "Since 2nd Semester" },
+    { name: "1st Position in Superior College (BISE Gujranwala)", date: "Aug 2022" },
+    { name: "Fully Funded Scholarship in College", date: "May 2020 - May 2022" },
+    { name: "1st Position in School (BISE Gujranwala)", date: "Dec 2020" }
+];
+
+const languages = ['English: Conversational', 'Urdu: Fluent or native', 'Punjabi: Fluent', 'Saraiki: Conversational', 'Hindi: Conversational'];
+
+function populateAwards() {
+    const awardsList = document.getElementById('awards-list');
+    awardsList.innerHTML = `<ul>${awards.map(award => `<li><strong>${award.name}</strong> - <em>${award.date}</em></li>`).join('')}</ul>`;
+}
+populateAwards();
+function populateLanguages() {
+    const languagesList = document.getElementById('languages-list');
+    languagesList.innerHTML =  `<ul>${languages.map(language => `<li>${language}</li>`).join('')}</ul>`;
+}
+populateLanguages();
